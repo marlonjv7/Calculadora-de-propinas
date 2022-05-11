@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Square+Peg&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@1,200&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: black;
+    padding: 6rem;
+    justify-content: center;
+}
+
+.menu{
+    padding: 0% 0% 0% 0%;
+    border: 8px solid #fff;
+    border-radius: 10px;
+}
+
+.titulo{
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    border-bottom: 8px solid #fff;
+    font-family: 'Square Peg', cursive;
+    font-size: 3rem;
+}
+
+.form{
+    padding: 30px;
+    display: grid;
+    margin: 0% 2% 2% 2%;
+    justify-content: center;
+    border: none;
+}
+
+.form input{
+    display: flex;
+    padding: 1%;
+    border-radius: 50px;
+    border: 1px dashed black;
+    margin-bottom: 2%;
+    width: 40vw;
+    font-family: 'Nunito', sans-serif;
+}
+
+.form .btn{
+    background-color: #fff;
+    padding: 0%;
+    width: 15vw;
+    font-size: 20px;
+    justify-content: center;
+    margin: 0 auto;
+    border: none;
+    border-radius: 20px;
+}
+
+.menu #Resultado{
+    margin: 0 auto;
+    margin-bottom: 2%;
+}
+
+.resul{
+    background-color: rgba(255, 255, 255, 0.332);
+    text-align: center;
+    padding: 2%;
+    width: 20vw;
+    border-radius: 10px;
+    margin-bottom: 4vh;
+}
+
+.resul h2{
+    margin-bottom: 2%;
+}
+
+.resul p{
+    text-align: left;
+    color: #fff;
+}
+
+.resul button{
+    padding: 2%;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    margin-top: 2vh;
+}
