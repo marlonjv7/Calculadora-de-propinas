@@ -10,19 +10,30 @@
 </head>
 
 <body>
-    <main class="menu">
-        <div>
-            <h2 class="titulo">Calculadora de Propinas</h2>
-        </div>
-        <div class="form">
-            <input type="number" name="Total de Cuenta" placeholder="Total de Cuenta" id="T_Cuenta">
-            <input type="number" name="Porcentaje de Propina" placeholder="Porcentaje de Propina" id="P_Propina">
-            <button class="btn">Calcular</button>
-        </div>
-        <section id="Resultado">
-        </section>
-    </main>
-
+    <section class="home">
+        <main class="menu">
+            <div class="divTitle">
+                <h1 class="titulo">Calculadora de Propinas</h1>
+            </div>
+            <div class="form">
+                <input type="number" name="Total de Cuenta" placeholder="Total de Cuenta" id="T_Cuenta">
+                <input type="number" name="Porcentaje de Propina" placeholder="Porcentaje de Propina" id="P_Propina">
+                <button class="btn">Calcular</button>
+            </div>
+            <section id="Resultado" class="resul resul-">
+                <div>
+                    <h2>El Resumen de su Cuenta es: </h2>
+                       <section>
+                           <p>Valor de cuenta: ${cuenta}</p>
+                           <p>Valor de propina: ${porcentaje}%</p>
+                           <p>Total a pagar: ${TOTAL}</p>
+                        </section>
+                       <button>Limpiar</button>
+                </div>
+            </section>
+        </main>
+    </section>
+        
     <script src="./scripts/script.js"></script>
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </body>

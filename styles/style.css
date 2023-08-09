@@ -2,35 +2,54 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@1,200&display=swap');
 
 *{
-    padding: 0;
-    margin: 0;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
 }
 
 body{
     background-color: black;
-    padding: 6rem;
+}
+
+.home {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
     justify-content: center;
 }
 
 .menu{
-    padding: 0% 0% 0% 0%;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    height: 40%;
     border: 8px solid #fff;
     border-radius: 10px;
 }
 
-.titulo{
-    color: #fff;
-    padding: 20px;
-    text-align: center;
+.divTitle {
+    display: flex;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     border-bottom: 8px solid #fff;
+}
+
+h1 {
+    margin: 2rem 0;
+    color: #fff;
     font-family: 'Square Peg', cursive;
     font-size: 3rem;
 }
 
 .form{
-    padding: 30px;
+    padding: 6%;
+    height: 100%;
     display: grid;
-    margin: 0% 2% 2% 2%;
+    align-items: center;
     justify-content: center;
     border: none;
 }
@@ -47,43 +66,64 @@ body{
 
 .form .btn{
     background-color: #fff;
-    padding: 0%;
     width: 15vw;
     font-size: 20px;
     justify-content: center;
-    margin: 0 auto;
     border: none;
-    border-radius: 20px;
-}
-
-.menu #Resultado{
     margin: 0 auto;
-    margin-bottom: 2%;
+    border-radius: 20px;
+    font-weight: 600;
 }
 
 .resul{
+    display: flex;
     background-color: rgba(255, 255, 255, 0.332);
     text-align: center;
-    padding: 2%;
-    width: 20vw;
+    width: 40vw;
     border-radius: 10px;
     margin-bottom: 4vh;
+    margin: auto;
+    justify-content: center;
+}
+.resul div {
+    display: flex;
+    flex-direction: column;
 }
 
-.resul h2{
-    margin-bottom: 2%;
+.resul h2 {
+    width: 100%;
+    color: #fff;
+    font-family: 'Square Peg', cursive;
+    font-size: 3rem;
+    margin: .4em auto;
+    line-height: 4.5vh;
 }
 
-.resul p{
+.resul section {
+    font-size: 20px;
     text-align: left;
     color: #fff;
+    margin: 0 auto;
 }
 
 .resul button{
-    padding: 2%;
+    width: 25%;
+    height: 4vh;
+    font-weight: 600;
     background-color: black;
     color: white;
     border: none;
-    border-radius: 6px;
-    margin-top: 2vh;
+    border-radius: 15px;
+    margin: 0.4rem auto;
+}
+
+.resul-2 {
+    display: none;
+}
+
+@media (max-width: 390px) {
+
+    .titulo{
+        font-size: 2rem;
+    }
 }
