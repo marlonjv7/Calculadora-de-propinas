@@ -10,14 +10,17 @@ resultado.addEventListener('click', remove);
 
 borrar = resultado;
 
+document.addEventListener('DOMContentLoaded', () => {
+    resultado.classList.add('resul', 'resul-2');
+
+});
+
 function porcen() {
     cuenta = Number(document.getElementById('T_Cuenta').value);
     porcentaje = Number(document.getElementById('P_Propina').value);
 
     propina = (cuenta * porcentaje) / 100;
     const TOTAL = cuenta + propina;
-
-    resultado.classList.add('resul', 'resul-2');
 
     if (cuenta == 0 || porcentaje == 0) {
         Swal.fire({
